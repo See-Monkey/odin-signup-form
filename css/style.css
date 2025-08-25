@@ -51,15 +51,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img-col {
-    background-image: url("/img/johny-goerend-U_diPCXCBxU-unsplash.jpg");
+    background-image: url("../img/johny-goerend-U_diPCXCBxU-unsplash.jpg");
     background-size: cover;
-    flex-basis: 40%;
+    background-position: center;
+    flex-basis: 43%;
     display: flex;
     flex-direction: column;
 }
 
 .logo-box {
-    flex-basis: 40%;
+    flex-basis: 35%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -79,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo-img {
@@ -88,17 +90,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-text{
     font-size: 10vh;
+    font-family: "Cherry Cream Soda";
 }
 
 .img-footer {
-    flex-basis: 60%;
+    flex-basis: 65%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    font-size: 18px;
+    color: var(--l-acc);
+    padding: 8px;
+}
+
+.img-footer a {
+    text-decoration: none;
+    color: var(--l-green);
 }
 
 .content-col {
-    flex-basis: 60%;
+    flex-basis: 57%;
     display: flex;
     flex-direction: column;
 }
@@ -108,22 +119,66 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: var(--slate);
+    background: linear-gradient(0, var(--slate) 10%, var(--jet));
     color: var(--l-acc);
+    padding-bottom: 20px;
+}
+
+.header p {
+    padding: 20px 50px;
+    font-size: 28px;
+    max-width: 65ch;
+}
+
+.header em {
+    color: var(--l-green);
+    padding: 4px;
 }
 
 .form {
     flex-basis: 33%;
     background-color: var(--l-acc);
     color: var(--jet);
+    padding: 20px 50px;
+    box-shadow: 0px 6px 10px var(--slate);
+    position: relative;
+    z-index: 1;
 }
 
 .footer {
     flex-basis: 32%;
     background-color: var(--silver);
     color: var(--jet);
+    position: relative;
+    z-index: 0;
 }
 
 button {
     background-color: var(--green);
+    margin: 40px 50px 20px;
+    padding: 10px 50px;
+    font-size: 22px;
+    color: var(--l-acc);
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px var(--slate);
+}
+
+button:hover {
+    background-color: var(--l-green);
+    cursor: pointer;
+}
+
+.login {
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.login a:hover {
+    color: var(--l-green);
 }
