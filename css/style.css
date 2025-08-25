@@ -45,37 +45,85 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page {
-
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
 
 .img-col {
-
+    background-image: url("/img/johny-goerend-U_diPCXCBxU-unsplash.jpg");
+    background-size: cover;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-box {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+.logo-bg {
+    width: 100%;
+    background-color: rgb(38, 41, 39, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.logo-img {
+    height: 20vh;
+    padding: 20px;
+}
+
+.logo-text{
+    font-size: 10vh;
 }
 
 .img-footer {
-    
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .content-col {
-
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--slate);
+    color: var(--l-acc);
 }
 
 .form {
-
+    flex-basis: 33%;
+    background-color: var(--l-acc);
+    color: var(--jet);
 }
 
 .footer {
-    
+    flex-basis: 32%;
+    background-color: var(--silver);
+    color: var(--jet);
+}
+
+button {
+    background-color: var(--green);
 }
