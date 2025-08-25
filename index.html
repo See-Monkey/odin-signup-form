@@ -36,19 +36,41 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form">
-                <form>
+                <form id="newUser" action="" method="post">
                     <fieldset>
                         <legend>Let's do this!</legend>
+                        <div class="formColumns">
+                            <div class="formColumn">
+                                <label for "firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="first name" minlength="2" tabindex="1" /> 
+                                
+                                <label for "email">EMAIL</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" tabindex="3" />
+                                
+                                <label for "password">PASSWORD</label>
+                                <input type="password" id="password" name="password" minlength="5" tabindex="5" />
+                            </div>
+                            <div class="formColumn">
+                                <label for "lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="last name" minlength="2" tabindex="2" />
+                                
+                                <label for "phoneNumber">PHONE NUMBER</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" tabindex="4" />
+                                
+                                <label for "confirmPass">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirmPass" name=confirmPass" minlength="5" tabindex="6" />
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
             <div class="footer">
                 <p>
-                    <button>Create Account</button>
+                    <button id="createAccount" type="button" form="newUser" tabindex="7">Create Account</button>
                 </p>
                 <p class="login">
                     Already have an account? 
-                    <a href="login.html">Log in</a>
+                    <a tabindex="8" href="login.html">Log in</a>
                 </p>
             </div>
         </div>
